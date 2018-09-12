@@ -1,0 +1,184 @@
+<mvc:View xmlns="sap.ui.table" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns:u="sap.ui.unified" 
+	xmlns:c="sap.ui.core" 
+	xmlns:l="sap.ui.commons.layout" 
+	xmlns:f="sap.ui.layout.form" 
+	xmlns:m="sap.m">
+	<m:Page title="Mixing Observation Sheet" showHeader="true" ariaLabelledBy="title" class="sapUiContentPadding">
+
+
+		<m:content>
+
+			<f:SimpleForm id="SimpleFormDisplayColumn_oneGroup234" editable="false" layout="ColumnLayout" columnsM="2" columnsL="3" columnsXL="4">
+				<f:content>
+					<m:Label text="Product" />
+					<m:Input />
+					<m:Label text="Batch ID" />
+					<m:Input />
+					<m:Label text="Mix #" />
+					<m:Input />
+					<m:Label text="Material ID" />
+					<m:Input />
+					<m:Label text="Order" />
+					<m:Input />
+					<m:Label text="Time" />
+					<m:TimePicker id="T2" valueFormat="hh:mm a" displayFormat="hh:mm a" change="handleChange" placeholder="Enter  Time" />
+					<m:Label text="Inspection Lot" />
+					<m:Input />
+					<m:Label text="Date" />
+					<m:DatePicker id="DatePickerID" displayFormatType="" change="handleChange" placeholder="Enter Date" />
+					<m:Label text="Line" />
+					<m:Input />
+				</f:content>
+			</f:SimpleForm>
+
+			
+
+
+			<!-- <Table rows="{/ProductCollection}" selectionMode="None">
+				<columns>
+
+					<Column width="15rem" hAlign="Begin">
+						<m:Label text="Ingredients/Parameters" design="Bold" />
+						<template>
+							<m:Text text="{gs_Name}"/>
+						</template>
+					</Column>
+
+					<Column width="7rem" hAlign="Begin">
+						<multiLabels>
+							<m:Label text="Mix #" design="Bold" />
+							<m:Label text="Qty Kg" design="Bold" />
+						</multiLabels>
+						<template>
+							<m:Input />
+						</template>
+					</Column>
+
+					<Column width="7rem" hAlign="Begin">
+						<multiLabels>
+							<m:Label text="Mix #" design="Bold"/>
+							<m:Label text="Details" design="Bold" />
+
+						</multiLabels>
+
+						<template>
+							<m:Input />
+						</template>
+					</Column>
+
+
+
+					<Column width="7rem" hAlign="Center">
+						<multiLabels>
+							<m:Label text="Temp" design="Bold"/>
+							<m:Label text="°C" design="Bold" />
+						</multiLabels>
+						<template>
+							<m:Input value="" />
+						</template>
+					</Column>
+
+
+					<Column width="7rem" hAlign="Center">
+						<multiLabels>
+							<m:Label text="Temp" design="Bold"/>
+							<m:Label text="°C" design="Bold" />
+						</multiLabels>
+
+						<template>
+							<m:Input />
+						</template>
+					</Column>
+
+
+
+					<Column width="100%" hAlign="Begin">
+						<multiLabels>
+							<m:Label text="Time" design="Bold"/>
+							<m:Label text="Problem/ Corrective Action" design="Bold" />
+						</multiLabels>
+						<template>
+							<m:Input value="" />
+						</template>
+					</Column>
+
+				</columns>
+			</Table>
+			<m:Label text="Remarks" design="Bold"/> 
+			<m:TextArea value="" growing="true" width="100%"/> -->
+
+			<m:Table id="idProductsTable" inset="false" items="{/ProductCollection}">
+
+				<m:columns>
+
+					<m:Column hAlign="Left">
+						<m:header>
+							<m:Label text="Ingredients/Parameters" design="Bold" width="100%"/>
+						</m:header>
+					</m:Column>
+
+					<m:Column hAlign="Left" demandPopin="true" minScreenWidth="Medium">
+						<m:header>
+							<m:Label text="Qty kg " design="Bold" width="100%"/>
+						</m:header>
+					</m:Column>
+
+					<m:Column hAlign="Left" demandPopin="true" minScreenWidth="Medium">
+						<m:header>
+							<m:Label text="Details" design="Bold" width="100%"/>
+						</m:header>
+					</m:Column>
+
+					<m:Column hAlign="Left" demandPopin="true" minScreenWidth="Medium">
+						<m:header>
+							<m:Label text="Temp °C" design="Bold" width="100%"/>
+						</m:header>
+					</m:Column>
+
+					<m:Column hAlign="Left" demandPopin="true" minScreenWidth="Medium">
+						<m:header>
+							<m:Label text="Temp °C" design="Bold" width="100%"/>
+						</m:header>
+					</m:Column>
+
+					<m:Column hAlign="Left" demandPopin="true" minScreenWidth="Medium">
+						<m:header>
+							<m:Label text="Problem/Corrective Action" design="Bold" width="100%"/>
+						</m:header>
+					</m:Column>
+
+				</m:columns>
+				<m:items>
+
+
+					<m:ColumnListItem>
+						<m:cells>
+							<m:Text text="{gs_Name}" />
+							<m:Input value="" />
+							<m:Input value="" />
+
+							<m:Input value="" />
+
+							<m:Input value="" />
+
+							<m:Input value="" />
+
+						</m:cells>
+
+					</m:ColumnListItem>
+				</m:items>
+			</m:Table>
+
+
+
+
+
+			<!-- ================================================================ -->
+
+
+		</m:content>
+
+	</m:Page>
+</mvc:View>

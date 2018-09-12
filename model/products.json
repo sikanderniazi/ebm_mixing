@@ -1,0 +1,84 @@
+{
+	"ProductCollection": [{
+			"gs_Name": "Mix Qty"
+
+		},
+		{
+			"gs_Name": "Mixing Representative"
+
+		},
+		{
+			"gs_Name": "Flour supplier 1"
+
+
+		},
+		{
+			"gs_Name": "Flour Supplier 2"
+
+		},
+		{
+			"gs_Name": "Fat supplier 1"
+
+		},
+		{
+			"gs_Name": "Fat supplier 2"
+		},
+		{
+			"gs_Name": "Sugar"
+		},
+		{
+			"gs_Name": "Water"
+		},
+		{
+			"gs_Name": "Eggs"
+
+
+		},
+		{
+			"gs_Name": "Crumb"
+		},
+		{
+			"gs_Name": "Left Over Dough"
+		},
+		{
+			"gs_Name": "Ammonia"
+		},
+		{
+			"gs_Name": "Soda"
+		},
+		{
+			"gs_Name": "Baking Powder"
+		},
+		{
+			"gs_Name": "SMS"
+		},
+		{
+			"gs_Name": "Raisin"
+		},
+		{
+			"gs_Name": "Peanut"
+		},
+		{
+			"gs_Name": "Pista"
+		},
+		{
+			"gs_Name": "Zeera"
+		},
+		{
+			"gs_Name": "Others"
+		},
+		{
+			"gs_Name": "Emulsion Time/RPM"
+		},
+		{
+			"gs_Name": "Mixing Time/RPM"
+		},
+		{
+			"gs_Name": "Dough"
+		},
+		{
+			"gs_Name": "Mixing Sec (Temp)"
+		}
+
+	]
+}
